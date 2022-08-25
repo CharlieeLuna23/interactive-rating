@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://github.com/CharlieeLuna23/interactive-rating.git)
+- Live Site URL: (https://charlieeluna23.github.io/interactive-rating/)
 
 ## My process
 
