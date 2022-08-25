@@ -9,15 +9,28 @@ const rating = document.getElementById('rating');
 const buttons = document.querySelectorAll('.rate-btn');
 
 //-------------------------------------------------------------------//
-//  Event Listeners
+//  Event Listeners & Functions
 
 buttons.forEach(button => {
   button.addEventListener('click', (e) => {
     rating.innerHTML = button.innerHTML;
+
+    selectedBtn();
     e.preventDefault();
   })
 });
 
+function selectedBtn() {
+  buttons.forEach(button => {
+    if (button.innerHTML == rating.innerHTML) {
+      button.classList.add('selected');
+    } else {
+      button.classList.remove('selected');
+    }
+  });
+}
+
+//-------------------------------------------------------------------//
 
 submitBtn.addEventListener('click', (e) => {
   
