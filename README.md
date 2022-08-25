@@ -69,5 +69,5 @@ I would like to more efficiently write JS code.
 
 ## Acknowledgments
 
-Once again to my cats for making me company during this learning process and path and my girlfriend who is currently waiting for me to finish the project so we can play videogames.
+Once again to my cats for making me company during this learning process and path and to my girlfriend who is currently waiting for me to finish the project so we can play videogames.
 
