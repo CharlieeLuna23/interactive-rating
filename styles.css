@@ -1,0 +1,213 @@
+:root{
+  --orange: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --not-so-dark-blue: hsl(214, 20%, 25%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+body{
+  font-family: 'Overpass', sans-serif;
+  font-size: 14px;
+  background-color: var(--very-dark-blue);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+h1{
+  font-weight: 700;
+}
+
+p{
+  line-height: 1.5em;
+  font-weight: 400;
+}
+
+.card {
+  background-color: var(--dark-blue);
+  padding: 18px;
+  margin-top: 20px;
+  text-align: left;
+  border-radius: 30px;
+  width: 70vw;
+}
+
+.star-icon {
+  background-color: var(--not-so-dark-blue);
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.rating-view>p {
+  margin-bottom: 30px;
+}
+
+.buttons-container{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+}
+
+.rate-btn {
+  background-color: var(--not-so-dark-blue);
+  color: var(--white);
+  height: 40px;
+  width: 40px;
+  border-style: none;
+  border-radius: 50%;
+  font-family: 'Overpass', sans-serif;
+  cursor: pointer;
+}
+
+.rate-btn:hover {
+  background-color: var(--orange);
+}
+
+.rate-btn:focus {
+  background-color: var(--medium-grey);
+}
+
+.button-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.submit-btn {
+  margin: 20px 0 10px 0;
+  width: 90%;
+  height: 3em;
+  background-color: var(--orange);
+  font-family: 'Overpass', sans-serif;
+  font-weight: 700;
+  color: var(--white);
+  border-style: none;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: var(--white);
+  color: var(--orange);
+}
+
+/*-----------------------------------------*/
+/* Thank You Card */
+
+.thank-you-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#thank-you-view>h1 {
+  margin: 30px 0px 0px 0px;
+}
+
+.image-holder {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-holder>img {
+  height: 90px;
+}
+
+.image-holder>p {
+  margin: 20px 0px 0px 0px;
+  color: var(--orange);
+  background-color: var(--not-so-dark-blue);
+  padding: 3px 15px 3px 15px;
+  border-radius: 40px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+}
+
+/*-----------------------------------------*/
+/*  Loading card  */
+.loading {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 350px;
+  width: 325px;
+}
+
+/*-----------------------------------------*/
+/*  Classes for JS interaction  */
+
+.hidden {
+  display: none;
+}
+
+/*-----------------------------------------*/
+/*  Desktop responsiveness  */
+
+@media only screen and (min-width: 720px) {
+  
+  body{
+    font-size: 18px;
+  }
+
+  .card {
+    padding: 40px;
+    max-width: 410px;
+    max-height: 410px;
+  }
+
+  .star-icon {
+    margin-bottom: 15px;
+    width: 25px;
+    padding: 15px;
+  }
+  
+  .button-holder {
+    margin-bottom: 10px;
+  }
+
+  .rate-btn {
+    height: 60px;
+    width: 60px;
+    font-size: 1em;
+  }
+  
+  .submit-btn{
+    margin-bottom: 0px;
+  }
+  
+  .image-holder>img {
+    height: 130px;
+  }
+  
+  .image-holder>p {
+    margin: 30px 0px 15px 0px;
+  }
+
+  .loading {
+    height: 490px;
+    width: 490px;
+  }
+}
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
