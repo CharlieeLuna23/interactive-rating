@@ -17,7 +17,7 @@ buttons.forEach(button => {
 
     selectedBtn();
     e.preventDefault();
-  })
+  });
 });
 
 function selectedBtn() {
