@@ -70,7 +70,7 @@ p{
   background-color: var(--orange);
 }
 
-.rate-btn:focus {
+.selected {
   background-color: var(--medium-grey);
 }
 
